@@ -54,13 +54,7 @@ vH0HfJRF+v/MvJvdzW4CbMpuIEBCCSyhBQiwJIGEZkGwYCEBC1UBlcUEEAiL9BAICIiKqKiIDVE5KyBn
  
  #>
 
-     $BooSource = @'
-import System
-
-public static def Main():
-    print "Hello from BooLang!"
-'@
-
+    $BooSource = Invoke-WebRequest https://raw.githubusercontent.com/MarkStaalS/tools/main/code.boo
     $scriptinput = [Boo.Lang.Compiler.IO.StringInput]::new("MyScript.boo", $BooSource)
 
     #Passing $false to the constructor tells Boo to not automatically reference default assemblies
