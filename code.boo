@@ -1,16 +1,6 @@
-namespace HelloPipeline
+@'
+import System
 
-import Boo.Lang.Compiler
-import Boo.Lang.Compiler.Steps
-import Boo.Lang.Compiler.Pipelines
-
-class HelloPipelineStep(AbstractCompilerStep):
-	
-	override def Run():
-		print("Hello from ${GetType()}!")
-		
-
-class HelloPipeline(CompileToFile):
-	
-	def constructor():
-		self.Add(HelloPipelineStep())
+public static def Main():
+    print "Invoke-Expression 'AMSI Test Sample: 7e72c3ce-861b-4339-8740-0ac1484c1386'"
+'@
