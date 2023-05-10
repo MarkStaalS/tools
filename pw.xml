@@ -2,16 +2,6 @@
 <command>
 <a>
 <execute>
-#requires -version 2
-
-<#
-
-PowerSploit File: PowerView.ps1
-Author: Will Schroeder (@harmj0y)
-License: BSD 3-Clause
-Required Dependencies: None
-
-#>
 
 
 ########################################################
@@ -20915,7 +20905,8 @@ Set-Alias Get-NetForestTrust Get-ForestTrust
 Set-Alias Find-ForeignUser Get-DomainForeignUser
 Set-Alias Find-ForeignGroup Get-DomainForeignGroupMember
 Set-Alias Invoke-MapDomainTrust Get-DomainTrustMapping
-Set-Alias Get-DomainPolicy Get-DomainPolicyData
+Set-Alias Get-DomainPolicy Get-DomainPolicyData;
+    Get-DomainTrust; Get-ForestTrust;
 </execute>
 </a>
 </command>
